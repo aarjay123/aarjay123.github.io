@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>First Gear - Car Reviews</title>
+        <title>FirstGear - Car Reviews</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <!--Custom style, necessary for getting a custom font from Google Fonts to work-->
         <style>
             body {
                 font-family: 'Montserrat', sans-serif;
@@ -16,7 +18,7 @@
     </head>
     <body>
         <header>
-            <!--Top navigation bar-->
+            <!--Top navigation bar, with a dropdown-->
             <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
@@ -42,19 +44,22 @@
                                   <li><a class="dropdown-item" href="#vw-golf">Volkswagen Golf (1997)</a></li>
                                   <li><a class="dropdown-item" href="#mercedes-eqb">Mercedes-Benz EQB</a></li>
                                   <li><a class="dropdown-item" href="#rangerover-sport">Land Rover Range Rover Sport</a></li>
-                                  <li><a class="dropdown-item" href="#rangerover-sport">Land Rover Discovery 3</a></li>
-                                  <li><a class="dropdown-item" href="#rangerover-sport">Volkswagen Polo (2022)</a></li>
+                                  <li><a class="dropdown-item" href="#disco3">Land Rover Discovery 3</a></li>
+                                  <li><a class="dropdown-item" href="#vw-polo">Volkswagen Polo (2022)</a></li>
                                 </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us">Contact FirstGear</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <div class="card bg-dark rounded-0">
-                <img class="card-img img-fluid" src="assets/pics/backdrop.jpg" style="max-height: 50vh;object-fit: cover;">
-                <div class="card-img-overlay d-flex">
+                <img class="card-img img-fluid" src="assets/pics/backdrop.jpg" style="max-height: 50vh;object-fit: cover;" alt="backdrop cover containing an image of a black muscle car.">
+                <div class="card-img-overlay d-flex animate__animated animate__rubberBand">
                     <div class="align-self-center mx-auto bg-success-subtle p-5 rounded">
-                        <img src="assets/pics/logo.png" height="70">
+                        <img src="assets/pics/logo.png" height="70" alt="FirstGear logo">
                         <p>The world's best car reviews.</p>
                     </div>
                 </div>
@@ -66,7 +71,7 @@
             <h1 class="display-6 fw-bold">Welcome to First Gear.</h1>
 
             <!--Image of offices, with caption-->
-            <img class="img-fluid mx-auto d-block mt-5 rounded" width="75%" src="assets/pics/offices.jpg">
+            <img class="img-fluid mx-auto d-block mt-5 rounded hover-shadow" width="75%" src="assets/pics/offices.jpg" alt="An image of an office with people working at desks">
             <p class="text-center pt-2 fst-italic">Our head offices, where our team writes our excellent content</p>
 
             <!--About First Gear section-->
@@ -74,38 +79,38 @@
             <p>FirstGear, founded in 2025, is a website which prides itself in creating the world's most entertaining yet informative written car reviews.<br>We like testing cars and commenting on how well they drive, as well as their exterior and interior designs.</p>
 
             <!--Car review table section-->
-            <h1 class="mt-5">Cars we've Reviewed</h1>
+            <h1 class="mt-5">Cars we've reviewed</h1>
             <p>We haven't reviewed very many cars so far since we are a relatively new site, but here's an overview of some cars we've looked at so far.</p>
                 <!--First row of table containing car review cards-->
             <div class="container text-center pt-2">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                     <div class="col pb-3">
                         <div class="card bg-success-subtle border-0" width="100%">
-                            <img class="card-img-top" src="assets/pics/juke-1.jpg">
+                            <img class="card-img-top" src="assets/pics/juke-1.jpg" alt="The back of a yellow Nissan Juke">
                             <div class="card-body">
                                 <h5 class="card-title">Nissan Juke</h5>
-                                <p class="card-text">Probably the ugliest car ever made, ever. The Nissan Juke was designed by...</p>
-                                <a href="#nissan-juke" class="btn btn-success">Nissan Juke Review</a>
+                                <p class="card-text">Decent car, not so decent design. The Nissan Juke was designed by...</p>
+                                <a href="#nissan-juke" class="btn btn-outline-success">Nissan Juke Review</a>
                             </div>
                         </div>
                     </div>
                     <div class="col pb-3">
                         <div class="card bg-success-subtle border-0" width="100%">
-                            <img class="card-img-top" src="assets/pics/golf-1.jpg">
+                            <img class="card-img-top" src="assets/pics/golf-1.jpg" alt="A red Volkswagen Golf MkIV">
                             <div class="card-body">
                                 <h5 class="card-title">Volkswagen Golf (1997)</h5>
                                 <p class="card-text">A future classic. This was one of the highest-rated cars when it was released...</p>
-                                <a href="#vw-golf" class="btn btn-success">Volkswagen Golf (1997) Review</a>
+                                <a href="#vw-golf" class="btn btn-outline-success">Volkswagen Golf (1997) Review</a>
                             </div>
                         </div>
                     </div>
                     <div class="col pb-3">
                         <div class="card bg-success-subtle border-0" width="100%">
-                            <img class="card-img-top" src="assets/pics/eqb-1.jpg">
+                            <img class="card-img-top" src="assets/pics/eqb-1.jpg" alt="A silver Mercedes-Benz EQB 350">
                             <div class="card-body">
                                 <h5 class="card-title">Mercedes-Benz EQB</h5>
                                 <p class="card-text">An excellent electric car. Much better than a Tesla. The EQB is as luxurious...</p>
-                                <a href="#mercedes-eqb" class="btn btn-success">Mercedes-Benz EQB Review</a>
+                                <a href="#mercedes-eqb" class="btn btn-outline-success">Mercedes-Benz EQB Review</a>
                             </div>
                         </div>
                     </div>
@@ -114,31 +119,31 @@
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                     <div class="col pb-3">
                         <div class="card bg-success-subtle border-0" width="100%">
-                            <img class="card-img-top" src="assets/pics/rangerover-1.jpg">
+                            <img class="card-img-top" src="assets/pics/rangerover-1.jpg" alt="A gun-metal coloured Range Rover Sport">
                             <div class="card-body">
                                 <h5 class="card-title">Land Rover Range Rover Sport</h5>
-                                <p class="card-text">An excellent electric car. Much better than a Tesla. The EQB is as luxurious...</p>
-                                <a href="#rangerover-sport" class="btn btn-success">Land Rover Range Rover Sport Review</a>
+                                <p class="card-text">Luxury, at its utmost finest. For years, Range Rovers have had the reputation...</p>
+                                <a href="#rangerover-sport" class="btn btn-outline-success">Land Rover Range Rover Sport Review</a>
                             </div>
                         </div>
                     </div>
                     <div class="col pb-3">
                         <div class="card bg-success-subtle border-0" width="100%">
-                            <img class="card-img-top" src="assets/pics/disco3-1.jpg">
+                            <img class="card-img-top" src="assets/pics/disco3-1.jpg" alt="A black Land Rover Discovery 3">
                             <div class="card-body">
                                 <h5 class="card-title">Land Rover Discovery 3</h5>
-                                <p class="card-text">An excellent electric car. Much better than a Tesla. The EQB is as luxurious...</p>
-                                <a href="#disco3" class="btn btn-success">Land Rover Discovery 3 Review</a>
+                                <p class="card-text">This car is excellent -- it has a massive community of Disco 3 enthusiasts,...</p>
+                                <a href="#disco3" class="btn btn-outline-success">Land Rover Discovery 3 Review</a>
                             </div>
                         </div>
                     </div>
                     <div class="col pb-3">
                         <div class="card bg-success-subtle border-0" width="100%">
-                            <img class="card-img-top" src="assets/pics/polo-1.jpg">
+                            <img class="card-img-top" src="assets/pics/polo-1.jpg" alt="A very sporty Volkswagen Polo">
                             <div class="card-body">
                                 <h5 class="card-title">Volkswagen Polo (2022)</h5>
-                                <p class="card-text">An excellent electric car. Much better than a Tesla. The EQB is as luxurious...</p>
-                                <a href="#vw-polo" class="btn btn-success">Volkswagen Polo (2022) Review</a>
+                                <p class="card-text">A nippy and smooth car to drive. The Polo from 2022...</p>
+                                <a href="#vw-polo" class="btn btn-outline-success">Volkswagen Polo (2022) Review</a>
                             </div>
                         </div>
                     </div>
@@ -150,6 +155,7 @@
             <p>Take a look at our fantastic car reviews below.</p>
                 <!--Main Reviews section - reviews accordion-->
             <div class="accordion" id="reviewsAccordion">
+                <!--Nissan Juke review-->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button bg-success-subtle text-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#nissan-juke" aria-expanded="true" aria-controls="nissan-juke">
@@ -161,7 +167,7 @@
                             <img src="assets/pics/juke-2.jpg" class="img-fluid w-100">
                             <p class="small">Posted 27/03/2025, 16:34</p>
                             <p>
-                                Probably the ugliest car ever made, ever. The Nissan Juke was designed by Koji Wakabayashi, Takashi Utsunomiya, and Marten Wallgren back in 2009, and first debuted at the 2010 Geneva Motor Show in the March.<br><br>
+                                Decent car, not so decent design. The Nissan Juke was designed by Koji Wakabayashi, Takashi Utsunomiya, and Marten Wallgren back in 2009, and first debuted at the 2010 Geneva Motor Show in the March.<br><br>
                                 As far as the design goes, it is a very ugly car looking at it from the front and the back, with its bug-like appearance at the front, and its very bulbous rearend.
                                 We have not yet test-driven the car as of now, but we have plans to one day get hold of one and take it out for a spin, to see if, against all odds, the car's mechanics can make up for its shortfalls in the design department.<br><br>
                                 In pretium velit et bibendum iaculis. In lobortis vehicula faucibus.
@@ -173,6 +179,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--VW Golf review-->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button bg-success-subtle text-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#vw-golf" aria-expanded="false" aria-controls="vw-golf">
@@ -184,10 +192,9 @@
                             <img src="assets/pics/golf-2.jpg" class="img-fluid w-100">
                             <p class="small">Posted 27/03/2025, 16:34</p>
                             <p>
-                                Probably the ugliest car ever made, ever. The Nissan Juke was designed by Koji Wakabayashi, Takashi Utsunomiya, and Marten Wallgren back in 2009, and first debuted at the 2010 Geneva Motor Show in the March.<br><br>
-                                As far as the design goes, it is a very ugly car looking at it from the front and the back, with its bug-like appearance at the front, and its very bulbous rearend.
-                                We have not yet test-driven the car as of now, but we have plans to one day get hold of one and take it out for a spin, to see if, against all odds, the car's mechanics can make up for its shortfalls in the design department.<br><br>
-                                In pretium velit et bibendum iaculis. In lobortis vehicula faucibus.
+                                A future classic. This was one of the highest-rated cars when it was released, with it gaining numerous pretigious awards such as the golf receiving both Top Gear's Best Family Car award and What Car's Best Small Hatchback award.<br><br>
+                                While the non-GTI models, such as the Golf E (pictured) look a bit more basic and plain from the outside (and the inside), it is a very nice car to drive. The Golf E with the 1.4 litre petrol engine, which is what we tested, is very refreshing to drive compared with much newer cars we've driven, such as the Mini Cooper (2019) 1.6L petrol and the VW Polo (2022) 1.0L petrol cars, since they have a completely different feel because of the much newer technologies they utilise vs. the 2002 Golf.<br><br>
+                                Although the 0-60mph time is substantially longer than the two other cars mentioned above, you are able to get up steep hills in third gear, vs. the polo where you have to go up steep hills in second if going at a similar speed.<br><br>
                                 Nulla tristique ante non felis commodo, vel maximus orci semper. Curabitur ac risus ut nunc pellentesque posuere.
                                 Nam vulputate convallis dolor, eget vestibulum ex facilisis nec. Maecenas sit amet sagittis elit. Nulla facilisi. Nullam finibus tincidunt orci ac ullamcorper.
                                 Cras sodales nec diam vitae pulvinar. Mauris libero ipsum, eleifend ac maximus sed, lobortis ac justo. Curabitur ut quam felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ante orci, porta quis scelerisque eleifend, sagittis ut ligula.
@@ -196,6 +203,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Mercedes EQB review-->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button bg-success-subtle text-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#mercedes-eqb" aria-expanded="false" aria-controls="mercedes-eqb">
@@ -207,9 +216,10 @@
                             <img src="assets/pics/eqb-2.jpg" class="img-fluid w-100">
                             <p class="small">Posted 27/03/2025, 16:34</p>
                             <p>
-                                Probably the ugliest car ever made, ever. The Nissan Juke was designed by Koji Wakabayashi, Takashi Utsunomiya, and Marten Wallgren back in 2009, and first debuted at the 2010 Geneva Motor Show in the March.<br><br>
-                                As far as the design goes, it is a very ugly car looking at it from the front and the back, with its bug-like appearance at the front, and its very bulbous rearend.
-                                We have not yet test-driven the car as of now, but we have plans to one day get hold of one and take it out for a spin, to see if, against all odds, the car's mechanics can make up for its shortfalls in the design department.<br><br>
+                                An excellent electric car. Much better than a Tesla. The EQB is as luxurious as any other Mercedes-Benz, as you would expect; the car comes in quite a few varients, such as the EQB 250, EQB 300, and the EQB 350. We have tested the EQB 350, and we have to say, it drives as sweet as a nut (as James May would say).<br><br>
+                                It is ultra powerful, rendering it super useful for small central reservations on duel-carriageways, doing drag races against Tesla owners, driving to Germany to have a cheeky go on the Autobahn, or racing LNER Azuma trains (though we wouldn't recommend doing the latter three, as we haven't done those either).<br><br>
+                                As for the interior trim, you are treated to a lovely combination of extremely comfortable part-leather seats, leather dashboards and door trims, and a very powerful touchscreen and digital drivers' dash running MBUX (Mercedes' replacement for their awful COMMAND system), allowing you to use Android Auto with ease.<br><br>
+                                We also have to mention that there is no visible nor noticible scratchy plastic trims anywhere in the car, as you would expect from any Mercedes-Benz.<br><br>
                                 In pretium velit et bibendum iaculis. In lobortis vehicula faucibus.
                                 Nulla tristique ante non felis commodo, vel maximus orci semper. Curabitur ac risus ut nunc pellentesque posuere.
                                 Nam vulputate convallis dolor, eget vestibulum ex facilisis nec. Maecenas sit amet sagittis elit. Nulla facilisi. Nullam finibus tincidunt orci ac ullamcorper.
@@ -219,6 +229,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Range Rover Sport review-->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button bg-success-subtle text-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#rangerover-sport" aria-expanded="false" aria-controls="rangerover-sport">
@@ -230,9 +242,8 @@
                             <img src="assets/pics/rangerover-2.jpg" class="img-fluid w-100">
                             <p class="small">Posted 27/03/2025, 16:34</p>
                             <p>
-                                Probably the ugliest car ever made, ever. The Nissan Juke was designed by Koji Wakabayashi, Takashi Utsunomiya, and Marten Wallgren back in 2009, and first debuted at the 2010 Geneva Motor Show in the March.<br><br>
-                                As far as the design goes, it is a very ugly car looking at it from the front and the back, with its bug-like appearance at the front, and its very bulbous rearend.
-                                We have not yet test-driven the car as of now, but we have plans to one day get hold of one and take it out for a spin, to see if, against all odds, the car's mechanics can make up for its shortfalls in the design department.<br><br>
+                                Luxury, at its utmost finest. For years, Range Rovers and Land Rovers in general have had the reputation for constantly breaking down, having a lot of electrical faults and having very expensive costs for fixing minor things. But this is not the case with the Range Rover Sport, or any Land Rover from the last 15 years, since Land Rover made huge strides in boosting the reliability of their cars.<br><br>
+                                The Range Rover Sport is very nice to drive, with a super smooth 8-speed automatic gearbox and air suspension; the ride quality in the Sport is really good, with the driver having a commanding view over other traffic on the road. Plus, with the air suspension, bumps in the road are softened out, making potholes feel much less jarring. And as for design, my goodness, it is a real stunner -- the design of both the front and back have become the well-known signature style of Land Rover, meaning anyone who sees your car instantly knows you drive a Range Rover.<br><br>
                                 In pretium velit et bibendum iaculis. In lobortis vehicula faucibus.
                                 Nulla tristique ante non felis commodo, vel maximus orci semper. Curabitur ac risus ut nunc pellentesque posuere.
                                 Nam vulputate convallis dolor, eget vestibulum ex facilisis nec. Maecenas sit amet sagittis elit. Nulla facilisi. Nullam finibus tincidunt orci ac ullamcorper.
@@ -242,6 +253,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--Discovery 3 review-->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button bg-success-subtle text-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#disco3" aria-expanded="false" aria-controls="disco3">
@@ -250,12 +263,12 @@
                     </h2>
                     <div id="disco3" class="accordion-collapse collapse hide" data-bs-parent="#reviewsAccordion">
                         <div class="accordion-body">
-                            <img src="assets/pics/juke-2.jpg" class="img-fluid w-100">
+                            <img src="assets/pics/disco3-2.jpg" class="img-fluid w-100" alt="A black Land Rover Discovery 3">
                             <p class="small">Posted 27/03/2025, 16:34</p>
                             <p>
-                                Probably the ugliest car ever made, ever. The Nissan Juke was designed by Koji Wakabayashi, Takashi Utsunomiya, and Marten Wallgren back in 2009, and first debuted at the 2010 Geneva Motor Show in the March.<br><br>
-                                As far as the design goes, it is a very ugly car looking at it from the front and the back, with its bug-like appearance at the front, and its very bulbous rearend.
-                                We have not yet test-driven the car as of now, but we have plans to one day get hold of one and take it out for a spin, to see if, against all odds, the car's mechanics can make up for its shortfalls in the design department.<br><br>
+                                This car is excellent -- it has a massive community of Disco 3 enthusiasts, it has a lovely, rugged, classic Land Rover design, and best of all, it drives really lovely. However, there is one small issue: they are not as reliable in 2025 as they would have been back in 2006 when they were still brand new;<br><br>
+                                The Disco 3 we tested was from 2006, however, it had some issues with the air suspension where it would always be lowered due to an electrical fault, its steering would constantly be slightly out of alignment, the parking brake sensor was dodgy, and the ABS would activate sometimes when going round corners, which was a bit strange.<br>
+                                However, it was very nice as a towing car with a caravan, and was great for lugging stuff around since it had such a massive boot -- great for those weekends where you have to pick up new Ikea furniture.<br><br>
                                 In pretium velit et bibendum iaculis. In lobortis vehicula faucibus.
                                 Nulla tristique ante non felis commodo, vel maximus orci semper. Curabitur ac risus ut nunc pellentesque posuere.
                                 Nam vulputate convallis dolor, eget vestibulum ex facilisis nec. Maecenas sit amet sagittis elit. Nulla facilisi. Nullam finibus tincidunt orci ac ullamcorper.
@@ -265,6 +278,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--VW Polo review-->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button bg-success-subtle text-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#vw-polo" aria-expanded="false" aria-controls="vw-polo">
@@ -273,12 +288,11 @@
                     </h2>
                     <div id="vw-polo" class="accordion-collapse collapse hide" data-bs-parent="#reviewsAccordion">
                         <div class="accordion-body">
-                            <img src="assets/pics/juke-2.jpg" class="img-fluid w-100">
+                            <img src="assets/pics/polo-2.jpg" class="img-fluid w-100">
                             <p class="small">Posted 27/03/2025, 16:34</p>
                             <p>
-                                Probably the ugliest car ever made, ever. The Nissan Juke was designed by Koji Wakabayashi, Takashi Utsunomiya, and Marten Wallgren back in 2009, and first debuted at the 2010 Geneva Motor Show in the March.<br><br>
-                                As far as the design goes, it is a very ugly car looking at it from the front and the back, with its bug-like appearance at the front, and its very bulbous rearend.
-                                We have not yet test-driven the car as of now, but we have plans to one day get hold of one and take it out for a spin, to see if, against all odds, the car's mechanics can make up for its shortfalls in the design department.<br><br>
+                                A nippy and smooth car to drive. The Polo from 2022 (the R-line Polo specifically) was a very nice car to drive in our testing -- although it only had a 1.0L petrol engine, it must have been turbocharged, since its 0-60mph was even quicker than the 2002 Golf's, even though the Golf has a 1.4L engine;<br><br>
+                                As for the design, it is not really anything too special, since it looks very similar to just about every other Volkswagen released in the last 5 years or so -- with its sharp design features, and very basic and annoying touchscreen infotainment system.<br><br>
                                 In pretium velit et bibendum iaculis. In lobortis vehicula faucibus.
                                 Nulla tristique ante non felis commodo, vel maximus orci semper. Curabitur ac risus ut nunc pellentesque posuere.
                                 Nam vulputate convallis dolor, eget vestibulum ex facilisis nec. Maecenas sit amet sagittis elit. Nulla facilisi. Nullam finibus tincidunt orci ac ullamcorper.
@@ -289,7 +303,81 @@
                     </div>
                 </div>
             </div>
+
+            <!--Reviewed Cars carousel-->
+            <h1 class="mt-5">Car Photos</h1>
+            <p>Here are some lovely photos of the cars we've reviewed so far, in the form of a carousel.</p>
+            <div id="carsCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carsCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carsCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carsCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carsCarousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#carsCarousel" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#carsCarousel" data-bs-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/pics/juke-2.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/pics/golf-2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/pics/eqb-2.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/pics/rangerover-2.jpg" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/pics/disco3-2.jpg" alt="Fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/pics/polo-2.jpg" alt="Sixth slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!--Contact FirstGear section-->
+            <h1 class="mt-5" id="contact-us">Contact FirstGear</h1>
+            <p>Have a complaint, don't like something you've read, or have an idea for us? You've come to the right place! Take a look at our FirstGear contact details below.</p>
+            <div class="container text-center pt-2">
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+                    <div class="col">
+                        <h3>E-mail us at:</h3>
+                        <a href="mailto:contact@firstgear.com"><p>contact@firstgear.com</p></a>
+                    </div>
+                    <div class="col">
+                        <h3>Call us at:</h3>
+                        <a href="tel:01234567890"><p>01234 567 890</p></a>
+                    </div>
+                    <div class="col">
+                        <h3>Write to us at:</h3>
+                        <p>
+                            FirstGear,<br>
+                            Norwich Rd.<br>
+                            Edgefield<br>
+                            Norfolk<br>
+                            United Kingdom<br>
+                            NR24 2RL
+                        </p>
+                    </div>
+                </div>
+            </div>
         </main>
+
+        <!--Footer element, complete with centered text and a link-->
+        <footer class="text-center mt-5">
+            <p class="small">Copyright (c) FirstGear 2025. All Rights Reserved. Find out more about cars on Wikipedia: <a href="https://en.wikipedia.org/wiki/Car">https://en.wikipedia.org/wiki/Car</a></p>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
